@@ -1,0 +1,21 @@
+.img-text {
+    overflow: hidden;
+    position: relative;
+}
+.img-text img {
+    width: 100%;
+    height: auto;
+}
+.img-text p {
+    background-color: rgba(0,0,0,0.8);
+    bottom: 0;
+    color: white;
+    margin: 0;
+    opacity: 0;
+    padding: 1em;
+    position: absolute;
+    width: 100%;
+}
+.img-text:hover p {
+    opacity: 1;
+}
