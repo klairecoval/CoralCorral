@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <script src="src/source.js"></script>
 </head>
 <body>
     <img class="bg-img" src="https://bulma.io/images/placeholders/800x480.png" />
@@ -12,5 +11,34 @@
         <img src="https://www.enchantedlearning.com/subjects/invertebrates/sponge/sponge_bw.GIF" />
         <p>https://www.enchantedlearning.com/subjects/invertebrates/sponge/coloring.shtml</p>
     </div>
+    <div class="img-text" id="bear" style="width: 150px;">
+        <img src="assets/bear.jpg" />
+        <p>The bear is a mammal.</p>
+    </div>
+    <div class="img-text" id="dog" style="width: 300px;">
+        <img src="assets/maggie.jpg" />
+        <p>This is my dog</p>
+    </div>
+
+    <button id="myBtn">More Info</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>While [app name] may look nice...</h2>
+            </div>
+            <div class="modal-body">
+                <p>There are tons of places in the real ocean where the coral is not doing so well.</p>
+                <p>You can do your part to protect the coral by supporting organizations that work to preserve it,
+                    not leaving trash around the beach, and wearing coral-safe sunscreen.</p>
+            </div>
+            <div class="modal-footer">
+                <button onclick="location.href='https://coral.org/'" >Learn More</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/source.js"></script>
 </body>
 </html>
