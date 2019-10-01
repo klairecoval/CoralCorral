@@ -23,6 +23,17 @@
     float: right;
     width: 20%;
     margin-top: -20rem;
+    transition: transform 1s;
+}
+
+#dog:hover {
+  transform: translate(20px, 20px);
+}
+
+#dog:hover p, #bear:hover p {
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
 }
 
 /*Modal CSS*/
