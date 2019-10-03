@@ -17,6 +17,7 @@ body {
     width: auto;
     z-index: -1;
 }
+
 .img-text {
     overflow: hidden;
     position: relative;
@@ -32,10 +33,14 @@ body {
     margin: 0;
     opacity: 0;
     padding: 1em;
-    width: 100%;
+    width: calc(100% - 2em);
 }
 .img-text:hover p {
     opacity: 1;
+}
+
+.creature {
+    position: absolute;
 }
 
 #dog {
