@@ -27,6 +27,17 @@ body {
     width: 100%;
     height: auto;
 }
+.img-text img[data-img='hover'] {
+    left: 0;
+    opacity: 0;
+    position: relative;
+    top: 0;
+    transition: 0.25s;
+    transition-property: opacity;
+}
+.img-text:hover img[data-img='hover'] {
+    opacity: 1;
+}
 .img-text p {
     background-color: rgba(0,0,0,0.8);
     bottom: 0;
@@ -46,6 +57,7 @@ body {
     position: absolute;
 }
 
+/*
 #dog {
     float: right;
     width: 20%;
@@ -69,6 +81,7 @@ body {
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
 }
+*/
 
 /*Modal CSS*/
 .modal {
