@@ -32,21 +32,41 @@
     opacity: 1;
 }
 
-#pufferfish {
-    /* width:0px; */
-    /* height:0px; */
-    background: transparent url('assets/pufferBefore.png');
-    transition: background 1s;
-    width: 400px;
-    height: 142px;
-    z-index:1;
-    text-indent: -9999em;
-}
-#pufferfish:hover {
-    background: url('assets/pufferAfter.png');
-    transition: background 1s;
-    z-index:2;
-}
+.puffContainer {
+    position: relative;
+    width: 130px;
+  }
+  
+  .afterPuff {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+  }
+  
+  .puffContainer:hover .overlay {
+    opacity: 1;
+  }
+  
+  .afterPuff {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
 
 /*Modal CSS*/
 .modal {
