@@ -1,7 +1,8 @@
 body {
+    font-family: 'Montserrat', sans-serif;
     height: 100%;
     overflow: hidden;
-    width: 100%:
+    width: 100%;
 }
 
 .bg-img {
@@ -19,7 +20,7 @@ body {
 }
 
 .img-text {
-    overflow: hidden;
+    overflow: visible;
     position: relative;
 }
 .img-text img {
@@ -30,10 +31,12 @@ body {
     background-color: rgba(0,0,0,0.8);
     bottom: 0;
     color: white;
+    left: calc(-1 * 50%);
     margin: 0;
     opacity: 0;
     padding: 1em;
-    width: calc(100% - 2em);
+    position: relative;
+    width: calc(200% - 2em);
 }
 .img-text:hover p {
     opacity: 1;
