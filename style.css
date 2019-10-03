@@ -1,3 +1,10 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+}
+
 .bg-img {
     height: auto;
     left: 0;
@@ -11,8 +18,9 @@
     width: auto;
     z-index: -1;
 }
+
 .img-text {
-    overflow: hidden;
+    overflow: visible;
     position: relative;
 }
 .img-text img {
@@ -23,10 +31,12 @@
     background-color: rgba(0,0,0,0.8);
     bottom: 0;
     color: white;
+    left: calc(-1 * 50%);
     margin: 0;
     opacity: 0;
     padding: 1em;
-    width: 100%;
+    position: relative;
+    width: calc(200% - 2em);
 }
 .img-text:hover p {
     opacity: 1;
@@ -35,15 +45,15 @@
 .puffContainer {
     position: relative;
     width: 130px;
-  }
-  
-  .afterPuff {
+}
+
+.afterPuff {
     display: block;
     width: 100%;
     height: auto;
-  }
-  
-  .overlay {
+}
+
+.overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -53,20 +63,24 @@
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-  }
-  
-  .puffContainer:hover .overlay {
+}
+
+.puffContainer:hover .overlay {
     opacity: 1;
-  }
-  
-  .afterPuff {
+}
+
+.afterPuff {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
+}
+
+.creature {
+    position: absolute;
+}
 
 /*Modal CSS*/
 .modal {
