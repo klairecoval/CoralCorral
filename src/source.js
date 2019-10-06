@@ -2,6 +2,8 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
+var loadImg = document.getElementById('loadImg');
+
 btn.onclick = function() {
   modal.style.display = "block";
 }
@@ -14,4 +16,8 @@ window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+}
+
+loadImg.onclick = function() {
+  loadImg.style.zIndex = "-200";
 }
