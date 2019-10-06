@@ -42,7 +42,7 @@ body {
     height: auto;
 }
 .img-text p {
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(18, 42, 54, 0.8);
     bottom: 0;
     color: white;
     left: calc(-1 * 50%);
@@ -54,11 +54,16 @@ body {
 }
 .img-text:hover p {
     opacity: 1;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
 }
 
 .puffContainer {
     position: relative;
-    width: 130px;
+    width: 150px;
+    margin-top: 20rem;
+    margin-left: 22rem;
 }
 
 .afterPuff {
@@ -94,6 +99,7 @@ body {
 
 .creature {
     position: absolute;
+    cursor: pointer;
 }
 
 /*Modal CSS*/
@@ -139,19 +145,48 @@ body {
     cursor: pointer;
 }
   
+#myBtn{
+    position: absolute;
+    font-weight: 700;
+    font-size: 1rem;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    background-color: #B5E48F;
+    color: #FFFFFF;
+    border-radius: 1.5rem;
+    border: none;
+    padding: 0.65rem 2rem;
+    transition: background 0.5s;
+    cursor: pointer;
+}
+
+#learnMore {
+    background-color: #B5E48F;
+    color: #FFFFFF;
+    border-radius: 1.5rem;
+    border: none;
+    padding: 0.65rem 2rem;
+    transition: background 0.5s;
+    cursor: pointer;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+#myBtn:hover, #learnMore:hover {
+    background-color: #82B15C;
+}
+
+
 .modal-header {
     padding: 2px 16px;
-    background-color: #5cb85c;
+    background-color: #82B15C;
     color: white;
 }
   
-.modal-body {padding: 2px 16px;}
+.modal-body {padding: 1rem 2rem;}
   
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #5cb85c;
-    color: white;
-}
   
 /* Modal Animation*/
 @-webkit-keyframes slideIn {

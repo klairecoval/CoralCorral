@@ -11,35 +11,11 @@
     <img class="bg-img" src="assets/bg0.png" />
     <img class="bg-img" src="assets/bg1.png" />
 
-    <div class="img-text creature" id="crab" style="width: 150px;">
-        <img src="assets/crab.png" />
-        <p>
-            Crabs are 10-legged animals that walk sideways.
-            Most crabs live in the oceans, but many can live on land.
-        </p>
+
+    <div class="img-text creature" id="starfish" style="width: 150px; left: 20px; top:400px;">
+        <img src="assets/starfish.png" />
     </div>
-    <div class="puffContainer">
-        <img src="assets/pufferBefore.png" alt="Avatar" class="image" style="width:130px;">
-        <div class="overlay">
-            <div class="afterPuff"><img src="assets/pufferAfter.png" style="width:130px;"></div>
-            <p>The Pufferfish is called the pufferfish because when it is threatened, it puffs up to about twice its normal size by gulping water.</p>
-        </div>
-    </div>
-    <div class="img-text creature" id="jellyfish" style="width: 150px; left: 200px;">
-        <img src="assets/jellyfish.png" />
-        <p>
-            Jellyfish have soft bodies and long, stinging tentacles that they use to catch fish.
-            A jellyfish is 98% water.
-        </p>
-    </div>
-    <div class="img-text creature" id="octopus" style="width: 150px; left: 400px;">
-        <img src="assets/octopus.png" />
-        <p>
-            Octopuses are eight-armed animals that live on the ocean floor.
-            An octopus has an eye on each side of its head and has very good eyesight, but it can't hear.
-        </p>
-    </div>
-    <div class="img-text creature" id="starfish" style="width: 150px; left: 600px;">
+    <div class="img-text creature" id="starfish" style="width: 100px; left: 150px; top:450px;">
         <img src="assets/starfish.png" />
         <p>
             Starfish are spiny, hard-skinned animals that live on the rocky sea floor.
@@ -47,7 +23,39 @@
         </p>
     </div>
 
-    <button id="myBtn">More Info</button>
+    <div class="puffContainer">
+        <img src="assets/pufferBefore.png" class="image" style="width:150px;">
+        <div class="overlay">
+            <div class="afterPuff"><img src="assets/pufferAfter.png" style="width:150px;"></div>
+        </div>
+        <div class="img-text creature">
+            <p>The Pufferfish is called the pufferfish because when it is threatened, it puffs up to about twice its normal size by gulping water.</p>
+        </div>
+    </div>
+
+    <div class="img-text creature" id="crab" style="width: 190px; left: 500px; top:625px;">
+        <img src="assets/crab.png" />
+        <p>
+            Crabs are 10-legged animals that walk sideways.
+            Most crabs live in the oceans, but many can live on land.
+        </p>
+    </div>
+    <div class="img-text creature" id="jellyfish" style="width: 190px; left: 1000px; top:250px;">
+        <img src="assets/jellyfish.png" />
+        <p>
+            Jellyfish have soft bodies and long, stinging tentacles that they use to catch fish.
+            A jellyfish is 98% water.
+        </p>
+    </div>
+    <div class="img-text creature" id="octopus" style="width: 250px; left: 1500px; top:400px;">
+        <img src="assets/octopus.png" />
+        <p>
+            Octopuses are eight-armed animals that live on the ocean floor.
+            An octopus has an eye on each side of its head and has very good eyesight, but it can't hear.
+        </p>
+    </div>
+
+    <button id="myBtn">more</button>
 
     <div id="myModal" class="modal">
         <div class="modal-content">
@@ -60,9 +68,7 @@
                 <p>You can do your part to protect the coral by supporting organizations that work to preserve it,
                     not leaving trash around the beach, and wearing coral-safe sunscreen.</p>
             </div>
-            <div class="modal-footer">
-                <button onclick="location.href='https://coral.org/'" >Learn More</button>
-            </div>
+            <button id="learnMore" onclick="location.href='https://coral.org/'" >Learn More</button>
         </div>
     </div>
 
