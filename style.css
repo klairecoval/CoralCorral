@@ -30,7 +30,6 @@ body {
     position: absolute;
     top: 0;
     width: auto;
-    z-index: -1;
 }
 
 .img-text {
@@ -51,6 +50,8 @@ body {
     padding: 1em;
     position: relative;
     width: calc(200% - 2em);
+    border-radius: 1.5rem;
+    box-shadow: 3px 3px 13px 0px rgba(11, 26, 34, 0.3);
 }
 .img-text:hover p {
     opacity: 1;
@@ -62,7 +63,7 @@ body {
 .puffContainer {
     position: relative;
     width: 150px;
-    margin-top: 20rem;
+    margin-top: 10rem;
     margin-left: 22rem;
 }
 
@@ -101,6 +102,70 @@ body {
     position: absolute;
     cursor: pointer;
 }
+
+img.crab-move {
+    animation: crabMover 0.5s infinite  alternate;
+}
+img.crab-move {
+    animation: crabMover 0.5s infinite  alternate;
+}
+@keyframes crabMover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+img.octo-move {
+    animation: octoMover 1.25s infinite  alternate;
+}
+img.octo-move {
+    animation: octoMover 1.25s infinite  alternate;
+}
+@keyframes octoMover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-18px); }
+}
+
+img.jelly-move {
+    animation: jellyMover 3.5s infinite  alternate;
+}
+img.jelly-move {
+    animation: jellyMover 3.5s infinite  alternate;
+}
+@keyframes jellyMover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-20px); }
+}
+
+img.puff-move {
+    animation: puffMover 2s infinite  alternate;
+}
+img.puff-move {
+    animation: puffMover 2s infinite  alternate;
+}
+@keyframes puffMover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-15px); }
+}
+
+.puffBubbles {
+    margin-left: 29rem;
+    margin-top: 10rem;
+    margin-bottom: -13rem;
+    animation: puffMover 2s infinite  alternate;
+}
+.crabBubbles {
+    margin-left: 25rem;
+    margin-top: 13rem;
+    margin-bottom: -13rem;
+    animation: crabMover 0.5s infinite  alternate;
+}
+.octoBubbles {
+    margin-left: 35rem;
+    margin-top: 10rem;
+    margin-bottom: -13rem;
+    animation: octoMover 1.25s infinite  alternate;
+}
+
 
 /*Modal CSS*/
 .modal {
@@ -246,3 +311,12 @@ body {
     0%   { -webkit-transform: rotate(360deg); }
     100% { -webkit-transform: rotate(0deg); }
 }
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 50px;
+    }
+  }

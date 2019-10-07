@@ -8,51 +8,55 @@
 <body>
     <img class="loadImg" id="loadImg" src="assets/loadImg.png"/>
 
-    <img class="bg-img" src="assets/bg0.png" />
-    <img class="bg-img" src="assets/bg1.png" />
+    <img class="bg-img" src="assets/bg0.png" style="z-index:-2;" />
+    <img class="bg-img" src="assets/bg1.png" style="z-index: -1;"/>
 
 
-    <div class="img-text creature" id="starfish" style="width: 150px; left: 20px; top:400px;">
+    <div class="img-text creature" id="starfish" style="width: 150px; left: 15px; top:300px;">
         <img src="assets/starfish.png" />
     </div>
-    <div class="img-text creature" id="starfish" style="width: 100px; left: 150px; top:450px;">
+    <div class="img-text creature" id="starfish" style="width: 100px; left: 110px; top:380px;">
         <img src="assets/starfish.png" />
         <p>
             Starfish are spiny, hard-skinned animals that live on the rocky sea floor.
             They move very slowly along the sea bed, using hundreds of tiny tube feet.
         </p>
     </div>
-
+    
+    <img class="puffBubbles" src="assets/bubbles.gif" style="width:120px;"/>
     <div class="puffContainer">
-        <img src="assets/pufferBefore.png" class="image" style="width:150px;">
+        <img src="assets/pufferBefore.png" class="image puff-move" style="width:150px;">
         <div class="overlay">
-            <div class="afterPuff"><img src="assets/pufferAfter.png" style="width:150px;"></div>
+            <div class="afterPuff"><img class="puff-move" src="assets/pufferAfter.png" style="width:150px;"></div>
         </div>
         <div class="img-text creature">
             <p>The Pufferfish is called the pufferfish because when it is threatened, it puffs up to about twice its normal size by gulping water.</p>
         </div>
     </div>
 
-    <div class="img-text creature" id="crab" style="width: 190px; left: 500px; top:625px;">
-        <img src="assets/crab1.gif" />
+    <img class="crabBubbles" src="assets/bubbles.gif" style="width:120px;"/>
+    <div class="img-text creature" id="crab" style="width: 130px; left: 450px; top:400px;">
         <p>
             Crabs are 10-legged animals that walk sideways.
             Most crabs live in the oceans, but many can live on land.
         </p>
+        <img class="crab-move" src="assets/crab1.gif" />
     </div>
-    <div class="img-text creature" id="jellyfish" style="width: 190px; left: 1000px; top:250px;">
-        <img src="assets/jelly_02.gif" />
+    <div class="img-text creature" id="jellyfish" style="width: 190px; left: 1000px; top:190px;">
+        <img class="jelly-move" src="assets/jelly_02.gif" />
         <p>
             Jellyfish have soft bodies and long, stinging tentacles that they use to catch fish.
             A jellyfish is 98% water.
         </p>
     </div>
-    <div class="img-text creature" id="octopus" style="width: 250px; left: 1500px; top:400px;">
-        <img src="assets/octopus.png" />
+
+    <img class="octoBubbles" src="assets/bubbles.gif" style="width:120px;"/>
+    <div class="img-text creature" id="octopus" style="width: 175px; left: 1150px; top:330px;">
         <p>
             Octopuses are eight-armed animals that live on the ocean floor.
             An octopus has an eye on each side of its head and has very good eyesight, but it can't hear.
         </p>
+        <img class="octo-move"  src="assets/octopus.png" />
     </div>
 
     <button id="myBtn">more</button>
