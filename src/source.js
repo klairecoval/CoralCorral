@@ -1,8 +1,11 @@
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("myBtn");
+const span = document.getElementsByClassName("close")[0];
 
-var loadImg = document.getElementById('loadImg');
+const loadImg = document.getElementById('loadImg');
+const bubble =  document.querySelector('#bubble_sfx');
+
+bubble.volume = 0.3;
 
 btn.onclick = function() {
   modal.style.display = "block";
@@ -20,4 +23,7 @@ window.onclick = function(event) {
 
 loadImg.onclick = function() {
   loadImg.style.zIndex = "-200";
+  document.querySelector('#bgm').play();
 }
+
+document.querySelectorAll('.creature').forEach((i) => i.addEventListener('mouseover', () => bubble.play()));
