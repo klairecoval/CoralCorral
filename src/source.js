@@ -5,6 +5,9 @@ const span = document.getElementsByClassName("close")[0];
 const loadImg = document.getElementById('loadImg');
 const bubble =  document.querySelector('#bubble_sfx');
 
+const plankton = document.getElementById('plankton');
+const planktonCloseUp = document.getElementById('closeUpPlankton');
+
 bubble.volume = 0.3;
 
 btn.onclick = function() {
@@ -24,6 +27,14 @@ window.onclick = function(event) {
 loadImg.onclick = function() {
   loadImg.style.zIndex = "-200";
   document.querySelector('#bgm').play();
+}
+
+plankton.onmouseover = function() {
+  planktonCloseUp.style.opacity = 1;
+}
+
+plankton.onmouseleave = function() {
+  planktonCloseUp.style.opacity = 0;
 }
 
 document.querySelectorAll('.creature').forEach((i) => i.addEventListener('mouseover', () => bubble.play()));
